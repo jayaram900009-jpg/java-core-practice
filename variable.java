@@ -21,6 +21,7 @@ public class SwapWithoutThird {
         System.out.println("b = " + b);
     }
 }
+
 //Find Largest of Three Numbers:
 import java.util.Scanner;
 
@@ -61,5 +62,28 @@ public class CelsiusToFahrenheit {
         double fahrenheit = (celsius * 9/5) + 32;   // formola : f =(c x 9/5)+32
 
         System.out.println("Temperature in Fahrenheit: " + fahrenheit);
+    }
+}
+
+
+//Calculate Simple Interest:
+import java.util.Scanner;
+
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Principal: ");
+        double p = sc.nextDouble();
+
+        System.out.print("Enter Rate: ");
+        double r = sc.nextDouble();
+
+        System.out.print("Enter Time: ");
+        double t = sc.nextDouble();
+
+        double si = (p * r * t) / 100; //formula of simple intrest
+
+        System.out.println("Simple Interest = " + si);
     }
 }
