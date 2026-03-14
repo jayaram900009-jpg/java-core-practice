@@ -1,0 +1,193 @@
+1)Print Hello Java:
+public class HelloMethod {
+
+    static void sayHello() {
+        System.out.println("Hello Java");
+    }
+
+    public static void main(String[] args) {
+        sayHello();
+    }
+}
+
+
+2)Print Numbers 1-5:
+
+public class Numbers {
+
+    static void printNumbers() {
+        for(int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public static void main(String[] args) {
+        printNumbers();
+    }
+}
+
+ 3)Add Two Numbers :
+
+
+public class AddNumbers {
+
+    static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+
+        int result = add(10, 20);
+        System.out.println(result);
+    }
+}
+
+4)Square of Number:
+
+public class Square {
+
+    static int square(int n) {
+        return n * n;
+    }
+
+    public static void main(String[] args) {
+
+        int result = square(6);
+        System.out.println(result);
+    }
+}
+
+5)Even or Odd:
+public class EvenOdd {
+
+    static void checkEvenOdd(int num) {
+
+        if(num % 2 == 0)
+            System.out.println("Even");
+        else
+            System.out.println("Odd");
+    }
+
+    public static void main(String[] args) {
+        checkEvenOdd(7);
+    }
+}
+
+6)Method to Find Largest of Two Numbers:
+
+public class LargestNumber {
+
+    static int findLargest(int a, int b) {
+        if(a > b)
+            return a;
+        else
+            return b;
+    }
+
+    public static void main(String[] args) {
+
+        int result = findLargest(10, 20);
+        System.out.println("Largest number is: " + result);
+    }
+}
+
+7)Method to Calculate Factorial:
+
+public class FactorialMethod {
+
+    static int factorial(int n) {
+
+        int fact = 1;
+
+        for(int i = 1; i <= n; i++) {
+            fact = fact * i;
+        }
+
+        return fact;
+    }
+
+    public static void main(String[] args) {
+
+        int result = factorial(5);
+        System.out.println("Factorial is: " + result);
+    }
+}
+
+8)Method to Reverse a Number:
+public class ReverseNumber {
+
+    static int reverse(int num) {
+
+        int rev = 0;
+
+        while(num != 0) {
+            int digit = num % 10;
+            rev = rev * 10 + digit;
+            num = num / 10;
+        }
+
+        return rev;
+    }
+
+    public static void main(String[] args) {
+
+        int result = reverse(1234);
+        System.out.println("Reversed number: " + result);
+    }
+}
+
+
+9) Method to Find Sum of Array:
+
+public class SumArray {
+
+    static int sumArray(int arr[]) {
+
+        int sum = 0;
+
+        for(int i = 0; i < arr.length; i++) {
+            sum = sum + arr[i];
+        }
+
+        return sum;
+    }
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, 20, 30, 40};
+
+        int result = sumArray(arr);
+
+        System.out.println("Sum of array: " + result);
+    }
+}
+
+10)Method to Check Prime Number:
+
+
+public class PrimeNumber {
+
+    static boolean isPrime(int num) {
+
+        if(num <= 1)
+            return false;
+
+        for(int i = 2; i < num; i++) {
+
+            if(num % i == 0)
+                return false;
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        int number = 7;
+
+        if(isPrime(number))
+            System.out.println("Prime Number");
+        else
+            System.out.println("Not Prime");
+    }
+}
